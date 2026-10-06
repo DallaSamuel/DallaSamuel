@@ -23,8 +23,11 @@ I build and document hands-on cloud and security labs on Azure, with the exact c
 
 ## Toolbox
 **Cloud:** Azure, Terraform, Key Vault, NSG, NAT Gateway, Checkov
+
 **Identity & Windows:** Active Directory, Group Policy, PowerShell, NTFS/AGDLP
+
 **Security:** Splunk, Nessus, Wireshark, Suricata, Ghidra
+
 **Other:** ServiceNow, Linux (Ubuntu, Kali), Python, Bash, Git
 
 ## Connect

@@ -20,7 +20,7 @@ SANS = "Segoe UI,Helvetica,Arial,sans-serif"
 
 QUERY = """
 query($login:String!){ user(login:$login){
-  repositories(privacy:PUBLIC, ownerAffiliation:OWNER){ totalCount }
+  repositories(privacy:PUBLIC, ownerAffiliations:OWNER){ totalCount }
   contributionsCollection{
     totalCommitContributions
     contributionCalendar{ totalContributions
@@ -39,6 +39,8 @@ def fetch():
         try:
             with urllib.request.urlopen(req, timeout=30) as r:
                 d = json.load(r)
+            if d.get("errors") and not d.get("data"):      # query problem: retrying won't help
+                raise SystemExit(f"GraphQL error, keeping the previous card: {d['errors']}")
             u = (d.get("data") or {}).get("user")
             if not u:
                 raise RuntimeError(d.get("errors") or "no user in response")

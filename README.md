@@ -1,5 +1,5 @@
 <div align="center">
-<img src="banner.png" alt="Dalla Samuel (CyberJKD): IT Support, Windows, Azure" width="100%" />
+<img src="./banner.png" alt="Dalla Samuel (CyberJKD): IT Support, Windows, Azure" width="100%" />
 </div>
 
 <div align="center">

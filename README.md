@@ -4,8 +4,6 @@
 
 <div align="center">
 
----
-
 B.Sc. Cybersecurity · Remote on US Central hours · Every lab documented in public with the commands, failures, and fixes.
 
 <a href="mailto:dallasamuel233@gmail.com"><img src="https://img.shields.io/badge/Email-dallasamuel233@gmail.com-0078D4?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>

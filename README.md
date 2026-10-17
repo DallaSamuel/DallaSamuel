@@ -111,6 +111,14 @@ B.Sc. Cybersecurity · Remote on US Central hours · Every lab documented in pub
 
 ---
 
+## Live GitHub activity
+
+<div align="center">
+<img src="./profile/stats.svg" alt="Live GitHub activity for CyberJKD, updated automatically" width="100%" />
+</div>
+
+---
+
 <div align="center">
 
 **Becoming dangerous through fundamentals.**

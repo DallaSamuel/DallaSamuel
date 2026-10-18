@@ -282,9 +282,13 @@ def build_terminal(s):
 
 CSS_BASE = """
 .blink{animation:blink 1s steps(1) infinite}
-.ring{transform-box:fill-box;transform-origin:center;animation:pulse 2s ease-out infinite}
+.ring{transform-box:fill-box;transform-origin:center;animation:pulse 1.4s ease-out infinite}
+.dot{transform-box:fill-box;transform-origin:center;animation:beat 1.4s ease-in-out infinite}
+.livetxt{animation:glowtxt 1.4s ease-in-out infinite}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes pulse{0%{opacity:.9;transform:scale(1)}70%,100%{opacity:0;transform:scale(3.2)}}
+@keyframes pulse{0%{opacity:.95;transform:scale(1)}80%,100%{opacity:0;transform:scale(3.4)}}
+@keyframes beat{0%,100%{opacity:1;transform:scale(1.15)}50%{opacity:.2;transform:scale(.7)}}
+@keyframes glowtxt{0%,100%{opacity:1}50%{opacity:.35}}
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important}
   .cur,.ring{display:none}
@@ -298,8 +302,9 @@ def svg(s):
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
          f'aria-label="CyberJKD live terminal: {s["contribs"]} contributions in the last 12 months">',
          f'<style>{CSS_BASE}{kf}</style>',
-         f'<circle cx="30" cy="14" r="4" fill="{GREEN}"/><circle class="ring" cx="30" cy="14" r="4" fill="none" stroke="{GREEN}" stroke-width="1.5"/>',
-         f'<text x="44" y="18" font-family="{MONO}" font-size="11" fill="{DIM}"><tspan fill="{GREEN}" font-weight="800" letter-spacing="2">LIVE</tspan>  ·  updated {stamp}  ·  every 6h</text>',
+         f'<circle class="dot" cx="30" cy="18" r="4" fill="{GREEN}"/><circle class="ring" cx="30" cy="18" r="4" fill="none" stroke="{GREEN}" stroke-width="1.5"/>',
+         f'<text class="livetxt" x="44" y="22" font-family="{MONO}" font-size="11" font-weight="800" letter-spacing="2" fill="{GREEN}">LIVE</text>',
+         f'<text x="88" y="22" font-family="{MONO}" font-size="11" fill="{DIM}">·  updated {stamp}  ·  every 6h</text>',
          body, "</svg>"]
     return "\n".join(o)
 

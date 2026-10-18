@@ -282,16 +282,19 @@ def build_terminal(s):
 
 CSS_BASE = """
 .blink{animation:blink 1s steps(1) infinite}
-.ring{transform-box:fill-box;transform-origin:center;animation:pulse 1.4s ease-out infinite}
-.dot{transform-box:fill-box;transform-origin:center;animation:beat 1.4s ease-in-out infinite}
-.livetxt{animation:glowtxt 1.4s ease-in-out infinite}
+.rp{opacity:0;transform-box:fill-box;transform-origin:center;animation:ripple 1.8s ease-out infinite}
+.rp2{animation-delay:.6s}.rp3{animation-delay:1.2s}
+.halo{transform-box:fill-box;transform-origin:center;animation:halo 1.8s ease-in-out infinite}
+.dot{transform-box:fill-box;transform-origin:center;animation:beat 1.8s ease-in-out infinite}
+.livetxt{animation:glowtxt 1.8s ease-in-out infinite}
+@keyframes ripple{0%{opacity:1;transform:scale(1)}100%{opacity:0;transform:scale(5.2)}}
+@keyframes halo{0%,100%{opacity:.15;transform:scale(1)}50%{opacity:.5;transform:scale(1.7)}}
+@keyframes beat{0%,100%{opacity:1;transform:scale(1.15)}50%{opacity:.35;transform:scale(.8)}}
+@keyframes glowtxt{0%,100%{opacity:1}50%{opacity:.45}}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-@keyframes pulse{0%{opacity:.95;transform:scale(1)}80%,100%{opacity:0;transform:scale(3.4)}}
-@keyframes beat{0%,100%{opacity:1;transform:scale(1.15)}50%{opacity:.2;transform:scale(.7)}}
-@keyframes glowtxt{0%,100%{opacity:1}50%{opacity:.35}}
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important}
-  .cur,.ring{display:none}
+  .cur,.rp{display:none}
 }
 """
 
@@ -302,9 +305,13 @@ def svg(s):
     o = [f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}" role="img" '
          f'aria-label="CyberJKD live terminal: {s["contribs"]} contributions in the last 12 months">',
          f'<style>{CSS_BASE}{kf}</style>',
-         f'<circle class="dot" cx="30" cy="18" r="4" fill="{GREEN}"/><circle class="ring" cx="30" cy="18" r="4" fill="none" stroke="{GREEN}" stroke-width="1.5"/>',
-         f'<text class="livetxt" x="44" y="22" font-family="{MONO}" font-size="11" font-weight="800" letter-spacing="2" fill="{GREEN}">LIVE</text>',
-         f'<text x="88" y="22" font-family="{MONO}" font-size="11" fill="{DIM}">·  updated {stamp}  ·  every 6h</text>',
+         f'<circle class="rp rp1" cx="30" cy="24" r="4.5" fill="{GREEN}" fill-opacity=".14" stroke="#3fb950" stroke-width="2"/>',
+         f'<circle class="rp rp2" cx="30" cy="24" r="4.5" fill="{GREEN}" fill-opacity=".14" stroke="#3fb950" stroke-width="2"/>',
+         f'<circle class="rp rp3" cx="30" cy="24" r="4.5" fill="{GREEN}" fill-opacity=".14" stroke="#3fb950" stroke-width="2"/>',
+         f'<circle class="halo" cx="30" cy="24" r="6.5" fill="{GREEN}"/>',
+         f'<circle class="dot" cx="30" cy="24" r="4.5" fill="{GREEN}"/>',
+         f'<text class="livetxt" x="44" y="28.5" font-family="{MONO}" font-size="12" font-weight="800" letter-spacing="2" fill="{GREEN}">LIVE</text>',
+         f'<text x="94" y="28" font-family="{MONO}" font-size="11" fill="{DIM}">updated {stamp}  ·  every 6h</text>',
          body, "</svg>"]
     return "\n".join(o)
 

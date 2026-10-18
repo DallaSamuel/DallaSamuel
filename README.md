@@ -114,7 +114,7 @@ B.Sc. Cybersecurity · Remote on US Central hours · Every lab documented in pub
 ## Live GitHub activity
 
 <div align="center">
-<img src="./profile/stats.svg" alt="Live GitHub activity for CyberJKD, updated automatically" width="100%" />
+<img src="./profile/stats.svg" alt="Live terminal showing CyberJKD GitHub stats and latest commits, updated automatically" />
 </div>
 
 ---

@@ -282,12 +282,10 @@ def build_terminal(s):
 
 CSS_BASE = """
 .blink{animation:blink 1s steps(1) infinite}
-.stat{display:none}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important}
-  .cur,.sm{display:none}
-  .stat{display:inline}
+  .cur{display:none}
 }
 """
 
@@ -315,7 +313,6 @@ def svg(s):
          f'<circle cx="30" cy="24" r="4.5" fill="{GREEN}"><animate attributeName="r" values="3.4;6.2;3.4" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.5;1" dur="1.8s" repeatCount="indefinite"/></circle>',
          f'<text x="44" y="28.5" font-family="{MONO}" font-size="12" font-weight="800" letter-spacing="2" fill="{GREEN}">LIVE<animate attributeName="opacity" values="1;.4;1" dur="1.8s" repeatCount="indefinite"/></text>',
          '</g>',
-         f'<g class="stat"><circle cx="30" cy="24" r="4.5" fill="{GREEN}"/><text x="44" y="28.5" font-family="{MONO}" font-size="12" font-weight="800" letter-spacing="2" fill="{GREEN}">LIVE</text></g>',
          f'<text x="94" y="28" font-family="{MONO}" font-size="11" fill="{DIM}">updated {stamp}  ·  every 6h</text>',
          body, "</svg>"]
     return "\n".join(o)

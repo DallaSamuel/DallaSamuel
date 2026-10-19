@@ -298,20 +298,16 @@ def svg(s):
          f'<style>{CSS_BASE}{kf}</style>',
          '<g class="sm">',
          f'<circle cx="30" cy="24" r="4.5" fill="{GREEN}" fill-opacity=".14" stroke="#3fb950" stroke-width="2" opacity="0">'
-         f'<animate attributeName="r" values="4.5;24" dur="1.8s" begin="0.0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".2 .6 .3 1"/>'
-         f'<animate attributeName="opacity" values="1;0" dur="1.8s" begin="0.0s" repeatCount="indefinite"/>'
-         f'<animate attributeName="stroke-width" values="2.4;0.4" dur="1.8s" begin="0.0s" repeatCount="indefinite"/></circle>',
+         f'<animate attributeName="r" values="4.5;16" dur="3.6s" begin="0s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".2 .6 .3 1"/>'
+         f'<animate attributeName="opacity" values="1;0" dur="3.6s" begin="0s" repeatCount="indefinite"/>'
+         f'<animate attributeName="stroke-width" values="2.4;0.4" dur="3.6s" begin="0s" repeatCount="indefinite"/></circle>',
          f'<circle cx="30" cy="24" r="4.5" fill="{GREEN}" fill-opacity=".14" stroke="#3fb950" stroke-width="2" opacity="0">'
-         f'<animate attributeName="r" values="4.5;24" dur="1.8s" begin="0.6s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".2 .6 .3 1"/>'
-         f'<animate attributeName="opacity" values="1;0" dur="1.8s" begin="0.6s" repeatCount="indefinite"/>'
-         f'<animate attributeName="stroke-width" values="2.4;0.4" dur="1.8s" begin="0.6s" repeatCount="indefinite"/></circle>',
-         f'<circle cx="30" cy="24" r="4.5" fill="{GREEN}" fill-opacity=".14" stroke="#3fb950" stroke-width="2" opacity="0">'
-         f'<animate attributeName="r" values="4.5;24" dur="1.8s" begin="1.2s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".2 .6 .3 1"/>'
-         f'<animate attributeName="opacity" values="1;0" dur="1.8s" begin="1.2s" repeatCount="indefinite"/>'
-         f'<animate attributeName="stroke-width" values="2.4;0.4" dur="1.8s" begin="1.2s" repeatCount="indefinite"/></circle>',
-         f'<circle cx="30" cy="24" r="7" fill="{GREEN}" opacity=".3"><animate attributeName="r" values="6;11;6" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values=".15;.55;.15" dur="1.8s" repeatCount="indefinite"/></circle>',
-         f'<circle cx="30" cy="24" r="4.5" fill="{GREEN}"><animate attributeName="r" values="3.4;6.2;3.4" dur="1.8s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.5;1" dur="1.8s" repeatCount="indefinite"/></circle>',
-         f'<text x="44" y="28.5" font-family="{MONO}" font-size="12" font-weight="800" letter-spacing="2" fill="{GREEN}">LIVE<animate attributeName="opacity" values="1;.4;1" dur="1.8s" repeatCount="indefinite"/></text>',
+         f'<animate attributeName="r" values="4.5;16" dur="3.6s" begin="1.8s" repeatCount="indefinite" calcMode="spline" keyTimes="0;1" keySplines=".2 .6 .3 1"/>'
+         f'<animate attributeName="opacity" values="1;0" dur="3.6s" begin="1.8s" repeatCount="indefinite"/>'
+         f'<animate attributeName="stroke-width" values="2.4;0.4" dur="3.6s" begin="1.8s" repeatCount="indefinite"/></circle>',
+         f'<circle cx="30" cy="24" r="7" fill="{GREEN}" opacity=".3"><animate attributeName="r" values="6;11;6" dur="3.6s" repeatCount="indefinite"/><animate attributeName="opacity" values=".15;.55;.15" dur="3.6s" repeatCount="indefinite"/></circle>',
+         f'<circle cx="30" cy="24" r="4.5" fill="{GREEN}"><animate attributeName="r" values="3.4;6.2;3.4" dur="3.6s" repeatCount="indefinite"/><animate attributeName="opacity" values="1;.5;1" dur="3.6s" repeatCount="indefinite"/></circle>',
+         f'<text x="44" y="28.5" font-family="{MONO}" font-size="12" font-weight="800" letter-spacing="2" fill="{GREEN}">LIVE<animate attributeName="opacity" values="1;.4;1" dur="3.6s" repeatCount="indefinite"/></text>',
          '</g>',
          f'<text x="94" y="28" font-family="{MONO}" font-size="11" fill="{DIM}">updated {stamp}  ·  every 6h</text>',
          body, "</svg>"]

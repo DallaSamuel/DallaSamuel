@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="400" viewBox="0 0 1600 400" role="img" aria-label="Dalla Samuel (CyberJKD): Cloud Support Engineer, Azure, Terraform">
+  <rect width="1600" height="400" fill="#0d1117"/>
+  <polygon points="0,0 480,0 272,224 0,224" fill="#212327"/>
+  <polygon points="0,224 272,224 480,400 0,400" fill="#2d2f33"/>
+  <polygon points="476,0 576,0 370,400 270,400" fill="#388bfd" fill-opacity="0.09"/>
+  <text x="640" y="168" font-family="Georgia, 'DejaVu Serif', 'Times New Roman', serif" font-weight="700" font-size="96" fill="#ffffff">Dalla Samuel</text>
+  <text x="644" y="234" font-family="'DejaVu Sans Mono', Consolas, 'Courier New', monospace" font-size="28" letter-spacing="5" fill="#58a6ff">CyberJKD</text>
+  <rect x="640" y="256" width="90" height="4" fill="#58a6ff"/>
+  <text x="644" y="314" font-family="'Segoe UI', 'DejaVu Sans', Helvetica, Arial, sans-serif" font-size="27" letter-spacing="4" fill="#c9d1d9">CLOUD SUPPORT ENGINEER<tspan fill="#8b949e" dx="18">·</tspan><tspan dx="18">AZURE</tspan><tspan fill="#8b949e" dx="18">·</tspan><tspan dx="18">TERRAFORM</tspan></text>
+</svg>

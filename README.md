@@ -1,10 +1,10 @@
 <div align="center">
-<img src="./banner.png" alt="Dalla Samuel (CyberJKD): IT Support, Windows, Azure" width="100%" />
+<img src="./banner.svg" alt="Dalla Samuel (CyberJKD): Cloud Support Engineer, Azure, Terraform" width="100%" />
 </div>
 
 <div align="center">
 
-B.Sc. Cybersecurity · Remote on US Central hours · Every lab documented in public with the commands, failures, and fixes.
+Final-year B.Sc. Cybersecurity student · Remote on US Central hours · Every lab documented in public with the commands, failures, and fixes.
 
 <a href="mailto:dallasamuel233@gmail.com"><img src="https://img.shields.io/badge/Email-dallasamuel233@gmail.com-0078D4?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
 <a href="https://www.linkedin.com/in/dallasamuel"><img src="https://img.shields.io/badge/LinkedIn-dallasamuel-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
@@ -17,10 +17,12 @@ B.Sc. Cybersecurity · Remote on US Central hours · Every lab documented in pub
 
 ## Open to roles in
 
-**IT Support / Help Desk** and **Windows systems administration**, growing toward **Junior Azure / Cloud Operations**.
+**Cloud Support Engineer (Azure)** first, and **IT Support / Help Desk** and **Windows systems administration** roles alongside it.
 
 ### What I can do from day one
 
+- Deploy and tear down Azure infrastructure with **Terraform**, and troubleshoot the failures along the way (quota, SKU capacity, state drift)
+- Lock down Azure environments: **NSGs**, **NAT Gateway**, **Key Vault**, and IaC scanned clean with **Checkov**
 - Reset passwords, unlock accounts, and run onboarding and offboarding in **Active Directory** (GUI and PowerShell)
 - Apply and verify **Group Policy**: password rules, screen lock, USB blocking
 - Set up shared folders with correct **NTFS permissions**, quotas, and access auditing
@@ -37,15 +39,14 @@ B.Sc. Cybersecurity · Remote on US Central hours · Every lab documented in pub
 
 ---
 
-## Featured labs: IT support and Windows admin
+## Featured: Cloud & Infrastructure as Code
 
-### [Active Directory Environment on Azure](https://github.com/DallaSamuel/CyberJKD-Labs/tree/main/phase-03/project-02-active-directory)
+### [Terraform Active Directory Domain Controller](https://github.com/DallaSamuel/CyberJKD-Labs/tree/main/phase-06/cloud-tech-techniques/cloud-system-admin-accelerator/lab-01_terraform-ad-dc)
 
-- Built a Windows Server 2025 domain with **5 OUs and 4 role-based security groups**
-- Group Policy: 12-character passwords, 15-minute screen lock, USB storage blocked
-- Full account lifecycle in the AD GUI and PowerShell: forced-change resets, unlocks, offboarding disables, and a **90-day inactive-account audit**
+- Azure network and a Windows Server 2022 domain controller in a **single `terraform apply`** (9 resources), then a clean `terraform destroy` with zero leftover cost
+- Debugged real failures: SKU capacity, quota, state drift, and a Gen1/Gen2 image mismatch
 
-**Skills:** Active Directory, Group Policy, PowerShell
+**Skills:** Terraform (HCL), Azure VNet/NSG/NIC, Custom Script Extension, AD DS forest promotion
 
 ### [Hardened NTFS File Server on Azure](https://github.com/DallaSamuel/CyberJKD-Labs/tree/main/phase-06/cloud-tech-techniques/cloud-system-admin-accelerator/lab-03_ntfs-file-server)
 
@@ -55,6 +56,20 @@ B.Sc. Cybersecurity · Remote on US Central hours · Every lab documented in pub
 
 **Skills:** Terraform, Key Vault, NAT Gateway, Checkov, NTFS/AGDLP, FSRM, GPO, PowerShell
 
+*Next: Microsoft Entra ID with Azure RBAC, Azure Monitor and storage.*
+
+---
+
+## Identity, Windows & IT Support
+
+### [Active Directory Environment on Azure](https://github.com/DallaSamuel/CyberJKD-Labs/tree/main/phase-03/project-02-active-directory)
+
+- Built a Windows Server 2025 domain with **5 OUs and 4 role-based security groups**
+- Group Policy: 12-character passwords, 15-minute screen lock, USB storage blocked
+- Full account lifecycle in the AD GUI and PowerShell: forced-change resets, unlocks, offboarding disables, and a **90-day inactive-account audit**
+
+**Skills:** Active Directory, Group Policy, PowerShell
+
 ### [ServiceNow Vulnerability Ticketing](https://github.com/DallaSamuel/CyberJKD-Labs/tree/main/phase-02/project-03-servicenow-vulnerabiity-ticketing)
 
 - Logged 6 findings as **parent/child incidents** with CVSS-to-priority mapping
@@ -62,19 +77,6 @@ B.Sc. Cybersecurity · Remote on US Central hours · Every lab documented in pub
 - Resolved 2 incidents with documented fixes
 
 **Skills:** ServiceNow, incident management, CMDB
-
----
-
-## Cloud & Infrastructure as Code
-
-### [Terraform Active Directory Domain Controller](https://github.com/DallaSamuel/CyberJKD-Labs/tree/main/phase-06/cloud-tech-techniques/cloud-system-admin-accelerator/lab-01_terraform-ad-dc)
-
-- Azure network and a Windows Server 2022 domain controller in a **single `terraform apply`** (9 resources), then a clean `terraform destroy` with zero leftover cost
-- Debugged real failures: SKU capacity, quota, state drift, and a Gen1/Gen2 image mismatch
-
-**Skills:** Terraform (HCL), Azure VNet/NSG/NIC, Custom Script Extension, AD DS forest promotion
-
-*Next: Microsoft Entra ID with Azure RBAC, Azure Monitor and storage.*
 
 ---
 

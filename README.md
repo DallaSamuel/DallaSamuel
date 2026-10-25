@@ -10,6 +10,7 @@ Final-year B.Sc. Cybersecurity student · Remote on US Central hours · Every la
 <a href="https://www.linkedin.com/in/dallasamuel"><img src="https://img.shields.io/badge/LinkedIn-dallasamuel-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
 <a href="https://calendly.com/dallasamuel/intro-call"><img src="https://img.shields.io/badge/Book_a_call-Calendly-006BFF?style=for-the-badge&logo=calendly&logoColor=white" alt="Book a call" /></a>
 <a href="https://dallasamuel.github.io/CyberJKD-Roadmap"><img src="https://img.shields.io/badge/Roadmap-CyberJKD-2EA043?style=for-the-badge" alt="Roadmap" /></a>
+<a href="https://github.com/DallaSamuel/CyberJKD-Labs"><img src="https://img.shields.io/badge/Lab_Portfolio-CyberJKD--Labs-8250DF?style=for-the-badge&logo=github&logoColor=white" alt="Lab portfolio" /></a>
 
 </div>
 
@@ -36,6 +37,12 @@ Final-year B.Sc. Cybersecurity student · Remote on US Central hours · Every la
 | Checkov passed / failed after hardening (from 19 / 17) | Active Directory built with GPO and full account lifecycle | Azure resources provisioned in a single `terraform apply` | External attackers caught by my Splunk SSH alert | Critical CVEs: unauthenticated vs. credentialed Nessus scan |
 
 </div>
+
+---
+
+## Full lab portfolio
+
+**[github.com/DallaSamuel/CyberJKD-Labs](https://github.com/DallaSamuel/CyberJKD-Labs)** - 20 documented labs across cloud & IaC, Windows & identity, monitoring, networking, and offensive security. Every one is written up in the same format: objective, architecture, step-by-step evidence, a troubleshooting log, and what I'd change for production. The highlights are below.
 
 ---
 
@@ -92,7 +99,7 @@ Final-year B.Sc. Cybersecurity student · Remote on US Central hours · Every la
 
 - **[Wireshark & Network Analysis on Azure](https://github.com/DallaSamuel/CyberJKD-Labs/tree/main/phase-03/project-03-wireshark-network-analysis):** traced DNS lookups and TCP/TLS handshakes on a Windows 11 VM with display filters and TCP stream reconstruction
 - **[Network Segmentation with pfSense](https://github.com/DallaSamuel/CyberJKD-Labs/tree/main/phase-01/project-02-network-segmentation):** WAN/LAN/DMZ with isolation verified by ping tests
-- **[Ubuntu Server Hardening (VM)](https://github.com/DallaSamuel/CyberJKD-Labs/tree/main/phase-01):** root login disabled, SSH limited to 3 attempts, UFW default-deny with only port 22 open, locked-down file permissions, empty-password audit; verified with before/after port scans and an SSH check from Kali
+- **[Ubuntu Server Hardening (VM)](https://github.com/DallaSamuel/CyberJKD-Labs/tree/main/phase-01/project-01-linux-hardening):** root login disabled, SSH limited to 3 attempts, UFW default-deny with only port 22 open, locked-down file permissions, empty-password audit; verified with before/after port scans and an SSH check from Kali
 - **[Linux Hardening Lab](https://github.com/DallaSamuel/linux-hardening-lab) + [Hardening Script](https://github.com/DallaSamuel/linux-hardening-script):** Kali (WSL2) audit that disabled 4 unnecessary services (closing exposed RDP ports 3389 and 3350), key-only SSH, UFW, and a Bash script that audits ports before and after
 - **[Brute Force Simulation + Detection](https://github.com/DallaSamuel/CyberJKD-Labs/tree/main/phase-01/project-05-brute-force-simulation):** attacked with Hydra, detected with a Python log parser, blocked with UFW, verified the block
 
@@ -125,6 +132,6 @@ Final-year B.Sc. Cybersecurity student · Remote on US Central hours · Every la
 
 **Becoming dangerous through fundamentals.**
 
-[Roadmap](https://dallasamuel.github.io/CyberJKD-Roadmap) · [LinkedIn](https://www.linkedin.com/in/dallasamuel) · [Book a call](https://calendly.com/dallasamuel/intro-call)
+[Lab portfolio](https://github.com/DallaSamuel/CyberJKD-Labs) · [Roadmap](https://dallasamuel.github.io/CyberJKD-Roadmap) · [LinkedIn](https://www.linkedin.com/in/dallasamuel) · [Book a call](https://calendly.com/dallasamuel/intro-call)
 
 </div>
